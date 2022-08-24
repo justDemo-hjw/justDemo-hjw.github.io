@@ -122,6 +122,11 @@
           </a>
         </li>
         <li>
+            <div class="type-ulk-div" id="type-ulk-div">
+            Universal Link (div监听click事件 创建 A 链接模拟点击 （我们目前的方式）)
+          </div>
+        </li>
+        <li>
           <a class="type-disable" href="javascript:void(0);"
             onclick="callWithIframe('https:\/\/app.alibaba.com/product/1600452824831/New-arrival-car-audio-mp3-1.html?spm=a2706.7843667.0.0.690f34d5MxGRHn&cross=msiteJs&ck=list_awaken&cna=F6SAG%2FnmNhMCASp4SZar8RbK&pageId=2a784ac721318c1f1661349672&prepage1=enalibaba%3A%2F%2FoneSight%3Fbiz%3Dseo%26keyword%3Dmp3&language=')">
             Universal Link (利用 JS 创建 Iframe src 跳转)
@@ -163,96 +168,42 @@
       </ul>
     </div>
   </div>
-  <div id='android'>
-    <h3>当前环境: Android</h3>
-    <div class="box">
-      <h3>自动唤端</h3>
-      <ul>
-        <li><a class="type-scheme" target="_self"
-            href="testcase.html?auto=true&os=android&type=scheme&callType=alink">Scheme (利用 JS 创建 A 链接模拟点击)</a></li>
-        <li><a class="type-scheme" target="_self"
-            href="testcase.html?auto=true&os=android&type=scheme&callType=iframe">Scheme (利用 JS 创建 Iframe src 跳转)</a>
-        </li>
-        <li><a class="type-disable" href="javascript:void(0);">Scheme (利用 JS 进行 Location 跳转)</a></li>
-        <li><a class="type-intent" target="_self"
-            href="testcase.html?auto=true&os=android&type=intent&callType=location">Intent (利用 JS 进行 Location 跳转)</a>
-        </li>
-      </ul>
-    </div>
-    <div class="box">
-      <h3>手动唤端</h3>
-      <ul>
-        <li>
-          <a class="type-scheme"
-            href="tbopen://m.taobao.com/tbopen/index.html?h5Url=https%3A%2F%2Fmarket.m.taobao.com%2Fapp%2Fpm%2Frax-tesla%2Fpages%2Findex-tao">
-            Scheme (A链接)
-          </a>
-        </li>
-        <li>
-          <a class="type-scheme"
-            href="tbopen://m.taobao.com/tbopen/index.html?h5Url=https%3A%2F%2Fh5.m.taobao.com%2Fawp%2Fcore%2Fdetail.htm%3Fspm%3Da215s.7406091.recommend.1.560c6770wRjIM5%26id%3D14836099171%26scm%3D1007.18975.103645.0%26pvid%3D6fb14fe3-e681-4199-bdf3-fe8e67433415%26utparam%3D%257B%2522ranger_buckets_native%2522%253A%2522%2522%252C%2522x_object_type%2522%253A%2522item%2522%252C%2522mtx_ab%2522%253A9%252C%2522mtx_sab%2522%253A0%252C%2522scm%2522%253A%25221007.18975.103645.0%2522%252C%2522x_object_id%2522%253A%252214836099171%2522%257D">
-            Scheme (A链接 path 改为 xxx)
-          </a>
-        </li>
-        <li>
-          <a class="type-scheme"
-            href="taobao://m.taobao.com/tbopen/index.html?h5Url=https%3A%2F%2Fh5.m.taobao.com%2Fawp%2Fcore%2Fdetail.htm%3Fspm%3Da215s.7406091.recommend.1.560c6770wRjIM5%26id%3D14836099171%26scm%3D1007.18975.103645.0%26pvid%3D6fb14fe3-e681-4199-bdf3-fe8e67433415%26utparam%3D%257B%2522ranger_buckets_native%2522%253A%2522%2522%252C%2522x_object_type%2522%253A%2522item%2522%252C%2522mtx_ab%2522%253A9%252C%2522mtx_sab%2522%253A0%252C%2522scm%2522%253A%25221007.18975.103645.0%2522%252C%2522x_object_id%2522%253A%252214836099171%2522%257D">
-            Scheme (A链接 协议 改为 taobao)
-          </a>
-        </li>
-        <li>
-          <a class="type-scheme"
-            href="eleme://web?url=https%3A%2F%2Fh5.m.taobao.com%2Fawp%2Fcore%2Fdetail.htm%3Fspm%3Da215s.7406091.recommend.1.560c6770wRjIM5%26id%3D14836099171%26scm%3D1007.18975.103645.0%26pvid%3D6fb14fe3-e681-4199-bdf3-fe8e67433415%26utparam%3D%257B%2522ranger_buckets_native%2522%253A%2522%2522%252C%2522x_object_type%2522%253A%2522item%2522%252C%2522mtx_ab%2522%253A9%252C%2522mtx_sab%2522%253A0%252C%2522scm%2522%253A%25221007.18975.103645.0%2522%252C%2522x_object_id%2522%253A%252214836099171%2522%257D">
-            Eleme
-          </a>
-        </li>
-        <li><a class="type-scheme" href="javascript:void(0);"
-            onclick="callWithALink('tbopen:\/\/m.taobao.com/tbopen/index.html?h5Url=https%3A%2F%2Fmarket.m.taobao.com%2Fapp%2Fpm%2Frax-tesla%2Fpages%2Findex-tao')">Scheme
-            (利用 JS 创建 A 链接模拟点击)</a></li>
-        <li><a class="type-scheme" href="javascript:void(0);"
-            onclick="callWithIframe('tbopen:\/\/m.taobao.com/tbopen/index.html?h5Url=https%3A%2F%2Fmarket.m.taobao.com%2Fapp%2Fpm%2Frax-tesla%2Fpages%2Findex-tao')">Scheme
-            (利用 JS 创建 Iframe src 跳转)</a></li>
-        <li><a class="type-disable" href="javascript:void(0);"
-            onclick="callWithLocation('tbopen:\/\/m.taobao.com/tbopen/index.html?h5Url=https%3A%2F%2Fmarket.m.taobao.com%2Fapp%2Fpm%2Frax-tesla%2Fpages%2Findex-tao')">Scheme
-            (利用 JS 进行 Location 跳转)</a></li>
-        <li><a class="type-intent" href="javascript:void(0);"
-            onclick="callWithLocation('intent:\/\/m.taobao.com/tbopen/index.html?h5Url='+encodeURIComponent('https:\/\/market.m.taobao.com/app/pm/rax-tesla/pages/index-tao')+'#Intent;scheme=tbopen;package=com.taobao.taobao;end')">Intent
-            (利用 JS 进行 Location 跳转)</a></li>
-      </ul>
-    </div>
-  </div>
   <script>
-    function getQueryParam(url) {
-      var queryStr = (url || window.location.href).split('?')[1] || '';
+    // function getQueryParam(url) {
+    //   var queryStr = (url || window.location.href).split('?')[1] || '';
 
-      const paramArr = queryStr.split('&');
+    //   const paramArr = queryStr.split('&');
 
-      const result = {};
-      paramArr.forEach(function (o, i) {
-        const tempArr = o.split('=');
-        result[tempArr[0]] = tempArr[1];
-      });
-      return result;
-    }
-    var a = getQueryParam();
-    var url = '';
-    if (a.type && a.callType) {
-      if (a.type === 'scheme') {
-        url = 'tbopen://m.taobao.com/tbopen/index.html?h5Url=https%3A%2F%2Fmarket.m.taobao.com%2Fapp%2Fpm%2Frax-tesla%2Fpages%2Findex-tao';
-      } else if (a.type === 'intent') {
-        url = 'intent://m.taobao.com/tbopen/index.html?h5Url=' + encodeURIComponent('https://market.m.taobao.com/app/pm/rax-tesla/pages/index-tao') + '#Intent;scheme=tbopen;package=com.taobao.taobao;end';
-      }
-      alert('开始执行自动唤端');
-      setTimeout(function () {
-        if (a.callType === 'alink') {
-          callWithALink(url);
-        } else if (a.callType === 'iframe') {
-          callWithIframe(url);
-        } else if (a.callType === 'location') {
-          callWithLocation(url);
-        }
-      }, 0);
-    }
+    //   const result = {};
+    //   paramArr.forEach(function (o, i) {
+    //     const tempArr = o.split('=');
+    //     result[tempArr[0]] = tempArr[1];
+    //   });
+    //   return result;
+    // }
+    // var a = getQueryParam();
+    // var url = '';
+    // if (a.type && a.callType) {
+    //   if (a.type === 'scheme') {
+    //     url = 'tbopen://m.taobao.com/tbopen/index.html?h5Url=https%3A%2F%2Fmarket.m.taobao.com%2Fapp%2Fpm%2Frax-tesla%2Fpages%2Findex-tao';
+    //   } else if (a.type === 'intent') {
+    //     url = 'intent://m.taobao.com/tbopen/index.html?h5Url=' + encodeURIComponent('https://market.m.taobao.com/app/pm/rax-tesla/pages/index-tao') + '#Intent;scheme=tbopen;package=com.taobao.taobao;end';
+    //   }
+    //   alert('开始执行自动唤端');
+    //   setTimeout(function () {
+    //     if (a.callType === 'alink') {
+    //       callWithALink(url);
+    //     } else if (a.callType === 'iframe') {
+    //       callWithIframe(url);
+    //     } else if (a.callType === 'location') {
+    //       callWithLocation(url);
+    //     }
+    //   }, 0);
+    // }
+    document.getElementById("type-ulk-div").addEventListener('click', function() {
+      console.log(123)
+      callWithALink('https://app.alibaba.com/product/1600452824831/New-arrival-car-audio-mp3-1.html?spm=a2706.7843667.0.0.690f34d5MxGRHn&cross=msiteJs&ck=list_awaken&cna=F6SAG%2FnmNhMCASp4SZar8RbK&pageId=2a784ac721318c1f1661349672&prepage1=enalibaba%3A%2F%2FoneSight%3Fbiz%3Dseo%26keyword%3Dmp3&language=')
+    })
     (function () {
       var ua = window.navigator.userAgent;
       var isIOS = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
