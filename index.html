@@ -127,7 +127,7 @@
           </div>
         </li>
         <li>
-          <div class="type-ulk-div" id="type-ulk-div">
+          <div class="type-ulk-div-xx" id="type-ulk-div">
           Universal Link (div监听click事件 利用JS Location跳转 （我们目前的方式）)
         </div>
       </li>
@@ -208,6 +208,10 @@
     document.getElementById("type-ulk-div").addEventListener('click', function() {
       console.log(123)
       callWithALink('https://app.alibaba.com/product/1600452824831/New-arrival-car-audio-mp3-1.html?spm=a2706.7843667.0.0.690f34d5MxGRHn&cross=msiteJs&ck=list_awaken&cna=F6SAG%2FnmNhMCASp4SZar8RbK&pageId=2a784ac721318c1f1661349672&prepage1=enalibaba%3A%2F%2FoneSight%3Fbiz%3Dseo%26keyword%3Dmp3&language=')
+    })
+    document.getElementById("type-ulk-div-xx").addEventListener('click', function() {
+      console.log(123)
+      window.location.href = 'https://app.alibaba.com/product/1600452824831/New-arrival-car-audio-mp3-1.html?spm=a2706.7843667.0.0.690f34d5MxGRHn&cross=msiteJs&ck=list_awaken&cna=F6SAG%2FnmNhMCASp4SZar8RbK&pageId=2a784ac721318c1f1661349672&prepage1=enalibaba%3A%2F%2FoneSight%3Fbiz%3Dseo%26keyword%3Dmp3&language='
     })
     (function () {
       var ua = window.navigator.userAgent;
